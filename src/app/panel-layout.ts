@@ -771,14 +771,7 @@ export class PanelLayoutManager implements AppModule {
     });
   }
 
-  private getTimeRangeLabel(): string {
-    const labels: Record<string, string> = {
-      '1h': 'the last hour', '6h': 'the last 6 hours',
-      '24h': 'the last 24 hours', '48h': 'the last 48 hours',
-      '7d': 'the last 7 days', 'all': 'all time',
-    };
-    return labels[this.ctx.currentTimeRange] ?? 'the last 7 days';
-  }
+
 
   private applyInitialUrlState(): void {
     if (!this.ctx.initialUrlState || !this.ctx.map) return;
