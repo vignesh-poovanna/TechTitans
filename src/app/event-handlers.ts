@@ -740,6 +740,9 @@ export class EventHandlerManager implements AppModule {
       news: this.ctx.latestClusters.length > 0 ? this.ctx.latestClusters : this.ctx.allNews,
       markets: this.ctx.latestMarkets,
       predictions: this.ctx.latestPredictions,
+      intelligence: this.ctx.intelligenceCache,
+      cyberThreats: this.ctx.cyberThreatsCache,
+      monitors: this.ctx.monitors,
       timestamp: Date.now(),
     }));
 

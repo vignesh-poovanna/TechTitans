@@ -8,7 +8,9 @@ interface ExportData {
   news?: NewsItem[] | ClusteredEvent[];
   markets?: MarketData[];
   predictions?: PredictionMarket[];
-  signals?: unknown[];
+  intelligence?: import('@/app/app-context').IntelligenceCache;
+  cyberThreats?: import('@/types').CyberThreat[] | null;
+  monitors?: import('@/types').Monitor[];
   timestamp: number;
 }
 
@@ -61,6 +63,58 @@ export function exportToCSV(data: ExportData, filename = 'worldmonitor-export'):
     lines.push('Title,Yes Price,Volume');
     data.predictions.forEach(p => {
       lines.push(csvRow([p.title, String(p.yesPrice), String(p.volume ?? '')]));
+    });
+    lines.push('');
+  }
+
+  if (data.intelligence) {
+    const intel = data.intelligence;
+    lines.push('=== INTELLIGENCE ===');
+
+    if (intel.military) {
+      lines.push('--- Military Activity ---');
+      lines.push('Callsign,Type,Operator,Country,Altitude,Lat,Lon');
+      intel.military.flights?.forEach(f => {
+        lines.push(csvRow([f.callsign, f.aircraftType, f.operator, f.operatorCountry, String(f.altitude), String(f.lat), String(f.lon)]));
+      });
+      lines.push('Vessel Name,Type,Operator,Country,Lat,Lon');
+      intel.military.vessels?.forEach(v => {
+        lines.push(csvRow([v.name, v.vesselType, v.operator, v.operatorCountry, String(v.lat), String(v.lon)]));
+      });
+    }
+
+    if (intel.earthquakes) {
+      lines.push('--- Earthquakes ---');
+      lines.push('Place,Magnitude,Depth,Time');
+      intel.earthquakes.forEach(e => {
+        lines.push(csvRow([e.place, String(e.magnitude), String(e.depth), e.time.toISOString()]));
+      });
+    }
+
+    if (intel.outages) {
+      lines.push('--- Outages ---');
+      lines.push('Title,Country,Severity,Date');
+      intel.outages.forEach(o => {
+        lines.push(csvRow([o.title, o.country, o.severity, o.pubDate.toISOString()]));
+      });
+    }
+    lines.push('');
+  }
+
+  if (data.cyberThreats && data.cyberThreats.length > 0) {
+    lines.push('=== CYBER THREATS ===');
+    lines.push('Indicator,Type,Source,Severity,Lat,Lon');
+    data.cyberThreats.forEach(t => {
+      lines.push(csvRow([t.indicator, t.indicatorType, t.source, t.severity, String(t.lat), String(t.lon)]));
+    });
+    lines.push('');
+  }
+
+  if (data.monitors && data.monitors.length > 0) {
+    lines.push('=== MONITORS ===');
+    lines.push('Keywords,Color,Lat,Lon');
+    data.monitors.forEach(m => {
+      lines.push(csvRow([m.keywords.join('; '), m.color, String(m.lat ?? ''), String(m.lon ?? '')]));
     });
     lines.push('');
   }

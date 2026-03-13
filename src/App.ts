@@ -435,7 +435,7 @@ export class App {
     // this.eventHandlers.setupPlaybackControl();
     this.eventHandlers.setupStatusPanel();
     // this.eventHandlers.setupPizzIntIndicator();
-    // this.eventHandlers.setupExportPanel();
+    this.eventHandlers.setupExportPanel();
     this.eventHandlers.setupUnifiedSettings();
 
     // Phase 4: SearchManager, MapLayerHandlers, CountryIntel
