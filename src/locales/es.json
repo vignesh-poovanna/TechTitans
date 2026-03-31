@@ -1260,4 +1260,13 @@
     },
     "ucdpEvents": {
       "stateBased": "Estatal",
-
+      "nonState": "No Estatal",
+      "oneSided": "Unilateral",
+      "country": "País",
+      "deaths": "Muertes",
+      "date": "Fecha",
+      "actors": "Actores",
+      "deathsCount": "{{count}} muertes",
+      "moreNotShown": "{{count}} eventos más no mostrados",
+      "noEvents": "No hay eventos en esta categoría"
+    }

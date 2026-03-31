@@ -83,13 +83,13 @@ export function exportToCSV(data: ExportData, filename = 'worldmonitor-export'):
       });
     }
 
-    if (intel.earthquakes) {
-      lines.push('--- Earthquakes ---');
-      lines.push('Place,Magnitude,Depth,Time');
-      intel.earthquakes.forEach(e => {
-        lines.push(csvRow([e.place, String(e.magnitude), String(e.depth), e.time.toISOString()]));
-      });
-    }
+     if (intel.earthquakes) {
+       lines.push('--- Earthquakes ---');
+       lines.push('Place,Magnitude,Depth,Time');
+       intel.earthquakes.forEach(e => {
+         lines.push(csvRow([e.place, String(e.magnitude), String(e.depthKm), new Date(e.occurredAt * 1000).toISOString()]));
+       });
+     }
 
     if (intel.outages) {
       lines.push('--- Outages ---');
