@@ -566,7 +566,7 @@ export function installRuntimeFetchPatch(): void {
       // Token may be stale after a sidecar restart — refresh and retry once.
       // Skip retry if we recently failed (avoid doubling every request during auth outages).
       if (response.status === 401 && localApiToken && Date.now() > authRetryCooldownUntil) {
-        if (debug) console.log(`[fetch] 401 from sidecar, refreshing token and retrying`);
+        if (debug) console.log('[fetch] 401 from sidecar, refreshing token and retrying');
         try {
           const { tryInvokeTauri } = await import('@/services/tauri-bridge');
           localApiToken = await tryInvokeTauri<string>('get_local_api_token');
@@ -582,7 +582,7 @@ export function installRuntimeFetchPatch(): void {
           if (debug) console.log(`[fetch] retry ${target} → ${response.status}`);
           if (response.status === 401) {
             authRetryCooldownUntil = Date.now() + 60_000;
-            if (debug) console.log(`[fetch] auth retry failed, suppressing retries for 60s`);
+            if (debug) console.log('[fetch] auth retry failed, suppressing retries for 60s');
           } else {
             authRetryCooldownUntil = 0;
           }

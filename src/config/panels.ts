@@ -484,7 +484,7 @@ const HAPPY_PANELS: Record<string, PanelConfig> = {
   'positive-feed': { name: 'Good News Feed', enabled: true, priority: 1 },
   progress: { name: 'Human Progress', enabled: true, priority: 1 },
   counters: { name: 'Live Counters', enabled: true, priority: 1 },
-  spotlight: { name: "Today's Hero", enabled: true, priority: 1 },
+  spotlight: { name: 'Today\'s Hero', enabled: true, priority: 1 },
   breakthroughs: { name: 'Breakthroughs', enabled: true, priority: 1 },
   digest: { name: '5 Good Things', enabled: true, priority: 1 },
   species: { name: 'Conservation Wins', enabled: true, priority: 1 },

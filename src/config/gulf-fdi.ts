@@ -47,7 +47,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     status: 'operational',
     yearAnnounced: 2001,
     yearOperational: 2003,
-    description: "Largest private container terminal in India at Mundra Port, Gujarat. Part of Adani Ports joint venture.",
+    description: 'Largest private container terminal in India at Mundra Port, Gujarat. Part of Adani Ports joint venture.',
     tags: ['India infrastructure', 'South Asia'],
   },
   {
@@ -99,7 +99,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     stakePercent: 25,
     status: 'operational',
     yearOperational: 2006,
-    description: "DP World minority stake in Nigeria's primary container gateway through Apapa Port.",
+    description: 'DP World minority stake in Nigeria\'s primary container gateway through Apapa Port.',
     tags: ['West Africa', 'Nigeria'],
   },
   {
@@ -116,7 +116,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     stakePercent: 35,
     status: 'operational',
     yearOperational: 2008,
-    description: "DP World 35% stake in Euromax, one of Europe's most automated deep-water terminals.",
+    description: 'DP World 35% stake in Euromax, one of Europe\'s most automated deep-water terminals.',
     tags: ['Europe', 'Netherlands', 'Automation'],
   },
   {
@@ -133,7 +133,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     stakePercent: 33,
     status: 'operational',
     yearOperational: 2009,
-    description: "DP World manages Jeddah South, Red Sea's largest container terminal. 33% stake.",
+    description: 'DP World manages Jeddah South, Red Sea\'s largest container terminal. 33% stake.',
     tags: ['Red Sea', 'Saudi Arabia'],
   },
   {
@@ -165,7 +165,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     stakePercent: 100,
     status: 'operational',
     yearOperational: 2015,
-    description: "DP World operates Chile's Lirquen port for South American logistics gateway.",
+    description: 'DP World operates Chile\'s Lirquen port for South American logistics gateway.',
     tags: ['South America', 'Chile'],
   },
   {
@@ -238,7 +238,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     status: 'operational',
     yearAnnounced: 2021,
     yearOperational: 2023,
-    description: "AD Ports 70% stake in new Karachi container terminal. Pakistan's primary gateway port.",
+    description: 'AD Ports 70% stake in new Karachi container terminal. Pakistan\'s primary gateway port.',
     tags: ['South Asia', 'Pakistan'],
   },
   {
@@ -310,7 +310,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     stakePercent: 63,
     status: 'operational',
     yearAnnounced: 2011,
-    description: "Mubadala 63% stake in Cepsa, Spain's second-largest oil company with refining and pipeline assets across Spain and Portugal.",
+    description: 'Mubadala 63% stake in Cepsa, Spain\'s second-largest oil company with refining and pipeline assets across Spain and Portugal.',
     tags: ['Europe', 'Spain', 'Refining', 'Pipelines'],
   },
 
@@ -366,7 +366,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     status: 'under-construction',
     yearAnnounced: 2023,
     yearOperational: 2028,
-    description: "New 9.6 mtpa LNG export facility at Ruwais Industrial City. UAE's first large-scale LNG export terminal, targeting European and Asian markets.",
+    description: 'New 9.6 mtpa LNG export facility at Ruwais Industrial City. UAE\'s first large-scale LNG export terminal, targeting European and Asian markets.',
     tags: ['LNG', 'Energy export', 'UAE'],
   },
 
@@ -386,7 +386,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     stakePercent: 25,
     status: 'operational',
     yearOperational: 2019,
-    description: "Masdar minority stake in Hornsea offshore wind development. Part of the UK's largest offshore wind zone.",
+    description: 'Masdar minority stake in Hornsea offshore wind development. Part of the UK\'s largest offshore wind zone.',
     tags: ['Renewable energy', 'UK', 'Offshore wind'],
   },
   {
@@ -513,7 +513,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     stakePercent: 20,
     status: 'announced',
     yearAnnounced: 2024,
-    description: "PIF interest in Italy's national fixed network (NetCo) spun out from Telecom Italia. Subject to regulatory review by Italian government.",
+    description: 'PIF interest in Italy\'s national fixed network (NetCo) spun out from Telecom Italia. Subject to regulatory review by Italian government.',
     tags: ['Europe', 'Telecoms', 'Italy', 'Critical infrastructure'],
   },
   {
@@ -530,7 +530,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     stakePercent: 100,
     status: 'announced',
     yearAnnounced: 2024,
-    description: "PIF's $100B electronics and technology manufacturing venture. Aims to build domestic semiconductor, consumer electronics, and EV capabilities in Saudi Arabia.",
+    description: 'PIF\'s $100B electronics and technology manufacturing venture. Aims to build domestic semiconductor, consumer electronics, and EV capabilities in Saudi Arabia.',
     tags: ['Manufacturing', 'Technology', 'Vision 2030', 'Semiconductors'],
   },
   {
@@ -587,7 +587,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     status: 'under-construction',
     yearAnnounced: 2020,
     yearOperational: 2026,
-    description: "World's planned largest green hydrogen-ammonia export facility. Joint venture: ACWA Power 26%, Air Products 26%, NEOM 34%.",
+    description: 'World\'s planned largest green hydrogen-ammonia export facility. Joint venture: ACWA Power 26%, Air Products 26%, NEOM 34%.',
     tags: ['NEOM', 'Green hydrogen', 'Vision 2030', 'Clean energy'],
   },
 
@@ -624,7 +624,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     stakePercent: 100,
     status: 'operational',
     yearOperational: 2021,
-    description: "100MW utility-scale solar project in Uzbekistan's Navoi region. ACWA Power's first Central Asia project.",
+    description: '100MW utility-scale solar project in Uzbekistan\'s Navoi region. ACWA Power\'s first Central Asia project.',
     tags: ['Central Asia', 'Solar', 'Uzbekistan'],
   },
   {
@@ -641,7 +641,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     stakePercent: 49,
     status: 'operational',
     yearOperational: 2023,
-    description: "ACWA Power's renewable energy portfolio in South Africa under REIPPPP (Renewable Energy Independent Power Producer Procurement Programme).",
+    description: 'ACWA Power\'s renewable energy portfolio in South Africa under REIPPPP (Renewable Energy Independent Power Producer Procurement Programme).',
     tags: ['Africa', 'Renewables', 'South Africa'],
   },
   {
@@ -658,7 +658,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     stakePercent: 49,
     status: 'operational',
     yearOperational: 2019,
-    description: "50MW Dhofar wind farm — Oman's first and the Arab world's first utility-scale wind farm.",
+    description: '50MW Dhofar wind farm — Oman\'s first and the Arab world\'s first utility-scale wind farm.',
     tags: ['Oman', 'Wind energy', 'Gulf region'],
   },
 
@@ -677,7 +677,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     investmentUSD: 12000,
     stakePercent: 100,
     status: 'operational',
-    description: "World's largest US oil refinery (630,000 bpd). Fully Aramco-owned via Motiva Enterprises. Critical Gulf Coast downstream asset.",
+    description: 'World\'s largest US oil refinery (630,000 bpd). Fully Aramco-owned via Motiva Enterprises. Critical Gulf Coast downstream asset.',
     tags: ['US energy infrastructure', 'Downstream', 'Gulf Coast'],
   },
   {
@@ -694,7 +694,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     stakePercent: 30,
     status: 'operational',
     yearAnnounced: 2023,
-    description: "Saudi Aramco 30% stake in Rongsheng Petrochemical's Panjin refinery in Liaoning Province. One of China's largest private refineries.",
+    description: 'Saudi Aramco 30% stake in Rongsheng Petrochemical\'s Panjin refinery in Liaoning Province. One of China\'s largest private refineries.',
     tags: ['China', 'Downstream energy', 'Petrochemicals'],
   },
   {
@@ -730,7 +730,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     investmentUSD: 2000,
     stakePercent: 100,
     status: 'operational',
-    description: "Saudi Ports Authority flagship Eastern Province gateway on the Persian Gulf. Expanding toward 7.5M TEU annual capacity.",
+    description: 'Saudi Ports Authority flagship Eastern Province gateway on the Persian Gulf. Expanding toward 7.5M TEU annual capacity.',
     tags: ['Saudi Arabia', 'Persian Gulf', 'Container'],
   },
   {
@@ -766,7 +766,7 @@ export const GULF_INVESTMENTS: GulfInvestment[] = [
     stakePercent: 9.9,
     status: 'operational',
     yearAnnounced: 2023,
-    description: "STC acquired 9.9% stake in Spain's Telefónica, becoming a top-3 shareholder. Gives Saudi Arabia indirect access to Telefónica's critical telecoms infrastructure across Europe and Latin America.",
+    description: 'STC acquired 9.9% stake in Spain\'s Telefónica, becoming a top-3 shareholder. Gives Saudi Arabia indirect access to Telefónica\'s critical telecoms infrastructure across Europe and Latin America.',
     tags: ['Europe', 'Telecoms', 'Spain', 'Latin America', 'Critical infrastructure'],
   },
 ];

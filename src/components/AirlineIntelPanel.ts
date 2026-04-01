@@ -252,7 +252,7 @@ export class AirlineIntelPanel extends Panel {
         <div class="ops-delay">${s.avgDelayMinutes > 0 ? `+${s.avgDelayMinutes}m` : '—'}</div>
         <div class="ops-cancel">${s.cancellationRate > 0 ? `${s.cancellationRate.toFixed(1)}% cxl` : ''}</div>
         ${s.closureStatus ? '<div class="ops-closed">CLOSED</div>' : ''}
-        ${s.notamFlags.length ? `<div class="ops-notam">⚠️ NOTAM</div>` : ''}
+        ${s.notamFlags.length ? '<div class="ops-notam">⚠️ NOTAM</div>' : ''}
       </div>`).join('');
         this.content.innerHTML = `<div class="ops-grid">${rows}</div>`;
     }
@@ -260,7 +260,7 @@ export class AirlineIntelPanel extends Panel {
     // ---- Flights tab ----
     private renderFlights(): void {
         if (!this.flightsData.length) {
-            this.content.innerHTML = `<div class="no-data">No flights — select airport in settings.</div>`;
+            this.content.innerHTML = '<div class="no-data">No flights — select airport in settings.</div>';
             return;
         }
         const rows = this.flightsData.map(f => {

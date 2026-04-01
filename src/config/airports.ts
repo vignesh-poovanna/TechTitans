@@ -4,7 +4,7 @@ export const MONITORED_AIRPORTS: MonitoredAirport[] = [
   // Americas - Major US Hubs
   { iata: 'JFK', icao: 'KJFK', name: 'John F. Kennedy International', city: 'New York', country: 'USA', lat: 40.6413, lon: -73.7781, region: 'americas' },
   { iata: 'LAX', icao: 'KLAX', name: 'Los Angeles International', city: 'Los Angeles', country: 'USA', lat: 33.9416, lon: -118.4085, region: 'americas' },
-  { iata: 'ORD', icao: 'KORD', name: "O'Hare International", city: 'Chicago', country: 'USA', lat: 41.9742, lon: -87.9073, region: 'americas' },
+  { iata: 'ORD', icao: 'KORD', name: 'O\'Hare International', city: 'Chicago', country: 'USA', lat: 41.9742, lon: -87.9073, region: 'americas' },
   { iata: 'ATL', icao: 'KATL', name: 'Hartsfield-Jackson Atlanta', city: 'Atlanta', country: 'USA', lat: 33.6407, lon: -84.4277, region: 'americas' },
   { iata: 'DFW', icao: 'KDFW', name: 'Dallas/Fort Worth International', city: 'Dallas', country: 'USA', lat: 32.8998, lon: -97.0403, region: 'americas' },
   { iata: 'DEN', icao: 'KDEN', name: 'Denver International', city: 'Denver', country: 'USA', lat: 39.8561, lon: -104.6737, region: 'americas' },
@@ -99,7 +99,7 @@ export const MONITORED_AIRPORTS: MonitoredAirport[] = [
   { iata: 'BEY', icao: 'OLBA', name: 'Rafic Hariri International', city: 'Beirut', country: 'Lebanon', lat: 33.8209, lon: 35.4884, region: 'mena' },
   { iata: 'DAM', icao: 'OSDI', name: 'Damascus International', city: 'Damascus', country: 'Syria', lat: 33.4115, lon: 36.5156, region: 'mena' },
   { iata: 'ALP', icao: 'OSAP', name: 'Aleppo International', city: 'Aleppo', country: 'Syria', lat: 36.1807, lon: 37.2244, region: 'mena' },
-  { iata: 'SAH', icao: 'OYSN', name: "Sana'a International", city: "Sana'a", country: 'Yemen', lat: 15.4763, lon: 44.2197, region: 'mena' },
+  { iata: 'SAH', icao: 'OYSN', name: 'Sana\'a International', city: 'Sana\'a', country: 'Yemen', lat: 15.4763, lon: 44.2197, region: 'mena' },
   { iata: 'ADE', icao: 'OYAA', name: 'Aden International', city: 'Aden', country: 'Yemen', lat: 12.8295, lon: 45.0288, region: 'mena' },
   // UAE / Saudi extras
   { iata: 'SHJ', icao: 'OMSJ', name: 'Sharjah International', city: 'Sharjah', country: 'UAE', lat: 25.3286, lon: 55.5172, region: 'mena' },

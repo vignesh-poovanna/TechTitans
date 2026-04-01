@@ -12,7 +12,7 @@ import type { PanelConfig } from '@/types';
 import type { StatusPanel } from './StatusPanel';
 import { exportSettings, importSettings, type ImportResult } from '@/utils/settings-persistence';
 
-const GEAR_SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>`;
+const GEAR_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>';
 
 const DESKTOP_RELEASES_URL = 'https://github.com/koala73/worldmonitor/releases';
 
@@ -384,14 +384,14 @@ export class UnifiedSettings {
         <div class="ai-flow-toggle-desc">${globeRenderDesc === globeRenderDescKey ? 'Controls the globe canvas resolution. Higher values look sharper on 4K displays but can melt GPUs.' : globeRenderDesc}</div>
       </div>
     </div>`;
-    html += `<select class="unified-settings-select" id="us-globe-render-scale">`;
+    html += '<select class="unified-settings-select" id="us-globe-render-scale">';
     for (const opt of GLOBE_RENDER_SCALE_OPTIONS) {
       const selected = opt.value === globeScale ? ' selected' : '';
       const translatedLabel = t(opt.labelKey);
       const label = translatedLabel === opt.labelKey ? opt.fallbackLabel : translatedLabel;
       html += `<option value="${opt.value}"${selected}>${label}</option>`;
     }
-    html += `</select>`;
+    html += '</select>';
 
     html += this.toggleRowHtml('us-map-flash', t('components.insights.mapFlashLabel'), t('components.insights.mapFlashDesc'), settings.mapNewsFlash);
 
@@ -430,12 +430,12 @@ export class UnifiedSettings {
         <div class="ai-flow-toggle-desc">${t('components.insights.streamQualityDesc')}</div>
       </div>
     </div>`;
-    html += `<select class="unified-settings-select" id="us-stream-quality">`;
+    html += '<select class="unified-settings-select" id="us-stream-quality">';
     for (const opt of STREAM_QUALITY_OPTIONS) {
       const selected = opt.value === currentQuality ? ' selected' : '';
       html += `<option value="${opt.value}"${selected}>${opt.label}</option>`;
     }
-    html += `</select>`;
+    html += '</select>';
 
     // Live streams idle behavior
     html += this.toggleRowHtml(
@@ -447,12 +447,12 @@ export class UnifiedSettings {
 
     // Language section
     html += `<div class="ai-flow-section-label">${t('header.languageLabel')}</div>`;
-    html += `<select class="unified-settings-lang-select" id="us-language">`;
+    html += '<select class="unified-settings-lang-select" id="us-language">';
     for (const lang of LANGUAGES) {
       const selected = lang.code === currentLang ? ' selected' : '';
       html += `<option value="${lang.code}"${selected}>${lang.flag} ${lang.label}</option>`;
     }
-    html += `</select>`;
+    html += '</select>';
     if (currentLang === 'vi') {
       html += `<div class="ai-flow-toggle-desc">${t('components.languageSelector.mapLabelsFallbackVi')}</div>`;
     }
@@ -476,7 +476,7 @@ export class UnifiedSettings {
 
     // AI status footer (web-only)
     if (!this.config.isDesktopApp) {
-      html += `<div class="ai-flow-popup-footer"><span class="ai-flow-status-dot" id="usStatusDot"></span><span class="ai-flow-status-text" id="usStatusText"></span></div>`;
+      html += '<div class="ai-flow-popup-footer"><span class="ai-flow-status-dot" id="usStatusDot"></span><span class="ai-flow-status-text" id="usStatusText"></span></div>';
     }
 
     return html;
@@ -558,7 +558,7 @@ export class UnifiedSettings {
         <span class="status-time">${feed.lastUpdate ? sp.formatTime(feed.lastUpdate) : 'Never'}</span>
       </div>`;
     }
-    html += `</div>`;
+    html += '</div>';
 
     html += `<div class="us-status-section">
       <div class="us-status-section-title">${t('components.status.apiStatus')}</div>`;
@@ -569,7 +569,7 @@ export class UnifiedSettings {
         ${api.latency ? `<span class="status-detail">${api.latency}ms</span>` : ''}
       </div>`;
     }
-    html += `</div>`;
+    html += '</div>';
 
     html += `<div class="us-status-section">
       <div class="us-status-section-title">${t('components.status.storage')}</div>

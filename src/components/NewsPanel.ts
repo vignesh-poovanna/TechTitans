@@ -500,7 +500,7 @@ export class NewsPanel extends Panel {
     // Build "Also reported by" section for multi-source confirmation
     const otherSources = cluster.topSources.filter(s => s.name !== cluster.primarySource);
     const topSourcesHtml = otherSources.length > 0
-      ? `<span class="also-reported">Also:</span>` + otherSources
+      ? '<span class="also-reported">Also:</span>' + otherSources
         .map(s => {
           const propRisk = getSourcePropagandaRisk(s.name);
           const propBadge = propRisk.risk !== 'low'

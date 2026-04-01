@@ -430,7 +430,7 @@ export const INTEL_HOTSPOTS: Hotspot[] = [
   },
   {
     id: 'sanaa',
-    name: "Sana'a",
+    name: 'Sana\'a',
     subtext: 'Yemen/Houthis',
     lat: 15.4,
     lon: 44.2,
@@ -607,7 +607,7 @@ export const CONFLICT_ZONES: ConflictZone[] = [
     id: 'korean_dmz',
     name: 'Korean Demilitarized Zone',
     intensity: 'low',
-    parties: ['Republic of Korea', "Democratic People's Republic of Korea", 'United Nations Command'],
+    parties: ['Republic of Korea', 'Democratic People\'s Republic of Korea', 'United Nations Command'],
     startDate: 'Jul 27, 1953',
     location: 'Korean Peninsula (MDL)',
     description: '250km-long, 4km-wide buffer zone along the Military Demarcation Line established by the 1953 Korean Armistice Agreement. Despite its name, one of the most heavily militarized borders in the world.',

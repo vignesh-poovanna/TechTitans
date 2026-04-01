@@ -314,21 +314,21 @@ export class ScenarioPanel {
 
         // Build prompt as headlines array (the function expects string[])
         const promptLines = [
-            `SCENARIO INTELLIGENCE BRIEF REQUEST`,
-            `You are a geopolitical intelligence analyst. Write a classified-style situation brief for the following hypothetical scenario.`,
+            'SCENARIO INTELLIGENCE BRIEF REQUEST',
+            'You are a geopolitical intelligence analyst. Write a classified-style situation brief for the following hypothetical scenario.',
             `SCENARIO: ${scenario.title}`,
             `DESCRIPTION: ${scenario.description}`,
             `TRIGGER REGION: ${scenario.triggerRegion.lat}, ${scenario.triggerRegion.lon}`,
-            `CASCADING EFFECTS:`,
+            'CASCADING EFFECTS:',
             ...scenario.effects.map(e => `- ${e.label}: ${e.description} [Severity: ${e.severity}]`),
-            `MARKET IMPACTS:`,
+            'MARKET IMPACTS:',
             ...scenario.marketImpacts.map(m => `- ${m.asset}: ${m.direction === 'up' ? '+' : '-'}${m.magnitude} (${m.rationale})`),
             `AFFECTED COUNTRIES: ${scenario.affectedCountries.join(', ')}`,
-            `SUPPLY CHAIN RISKS:`,
+            'SUPPLY CHAIN RISKS:',
             ...scenario.supplyChainRisks.map(r => `- ${r}`),
             scenario.aiPromptContext,
-            `Format as: SITUATION (what happened), ASSESSMENT (cascading consequences), OUTLOOK (likely next 48-72h developments).`,
-            `Use concise, professional military intelligence style. Mark uncertainty with '(ASSESSED)' or '(LIKELY)'. Keep under 250 words.`,
+            'Format as: SITUATION (what happened), ASSESSMENT (cascading consequences), OUTLOOK (likely next 48-72h developments).',
+            'Use concise, professional military intelligence style. Mark uncertainty with \'(ASSESSED)\' or \'(LIKELY)\'. Keep under 250 words.',
         ];
 
         try {

@@ -56,7 +56,7 @@ export class BreakthroughsTickerPanel extends Panel {
           `<a class="ticker-item" href="${sanitizeUrl(item.link)}" target="_blank" rel="noopener">` +
           `<span class="ticker-item-source">${escapeHtml(item.source)}</span>` +
           `<span class="ticker-item-title">${escapeHtml(item.title)}</span>` +
-          `</a>`,
+          '</a>',
       )
       .join('');
 

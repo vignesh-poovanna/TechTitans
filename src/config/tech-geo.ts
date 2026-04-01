@@ -443,7 +443,7 @@ export const TECH_HQS: TechHQ[] = [
   // Bangalore Unicorns
   { id: 'flipkart', company: 'Flipkart', city: 'Bangalore', country: 'India', lat: 12.9716, lon: 77.5946, type: 'public', marketCap: '$37B' },
   { id: 'swiggy', company: 'Swiggy', city: 'Bangalore', country: 'India', lat: 12.9279, lon: 77.6271, type: 'public' },
-  { id: 'byju', company: "BYJU'S", city: 'Bangalore', country: 'India', lat: 12.9352, lon: 77.6245, type: 'unicorn' },
+  { id: 'byju', company: 'BYJU\'S', city: 'Bangalore', country: 'India', lat: 12.9352, lon: 77.6245, type: 'unicorn' },
   { id: 'razorpay', company: 'Razorpay', city: 'Bangalore', country: 'India', lat: 12.9716, lon: 77.5946, type: 'unicorn', marketCap: '$7.5B' },
   { id: 'phonepe', company: 'PhonePe', city: 'Bangalore', country: 'India', lat: 12.9641, lon: 77.5967, type: 'unicorn', marketCap: '$12B' },
   { id: 'meesho', company: 'Meesho', city: 'Bangalore', country: 'India', lat: 12.9616, lon: 77.6387, type: 'unicorn' },

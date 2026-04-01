@@ -575,12 +575,12 @@ export class CountryBriefPage implements CountryBriefPanel {
       const icon = CountryBriefPage.INFRA_ICONS[type];
       const key = CountryBriefPage.INFRA_LABELS[type];
       const label = t(`modals.countryBrief.infra.${key}`);
-      html += `<div class="cb-infra-group">`;
+      html += '<div class="cb-infra-group">';
       html += `<div class="cb-infra-type">${icon} ${label}</div>`;
       for (const item of items) {
         html += `<div class="cb-infra-item"><span>${escapeHtml(item.name)}</span><span class="cb-infra-dist">${Math.round(item.distanceKm)} km</span></div>`;
       }
-      html += `</div>`;
+      html += '</div>';
     }
 
     content.innerHTML = html;

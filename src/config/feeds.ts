@@ -884,7 +884,7 @@ const TECH_FEEDS: Record<string, Feed[]> = {
     { name: 'Seeking Alpha Tech', url: rss('https://seekingalpha.com/market_currents.xml') },
   ],
   hardware: [
-    { name: "Tom's Hardware", url: rss('https://www.tomshardware.com/feeds/all') },
+    { name: 'Tom\'s Hardware', url: rss('https://www.tomshardware.com/feeds/all') },
     { name: 'SemiAnalysis', url: rss('https://news.google.com/rss/search?q=site:semianalysis.com+when:7d&hl=en-US&gl=US&ceid=US:en') },
     { name: 'Semiconductor News', url: rss('https://news.google.com/rss/search?q=semiconductor+OR+chip+OR+TSMC+OR+NVIDIA+OR+Intel+when:3d&hl=en-US&gl=US&ceid=US:en') },
   ],

@@ -125,7 +125,7 @@ export const FEEDS: Record<string, Feed[]> = {
 
   // Semiconductors & Hardware
   hardware: [
-    { name: "Tom's Hardware", url: rss('https://www.tomshardware.com/feeds/all') },
+    { name: 'Tom\'s Hardware', url: rss('https://www.tomshardware.com/feeds/all') },
     { name: 'SemiAnalysis', url: rss('https://www.semianalysis.com/feed') },
     { name: 'Semiconductor News', url: rss('https://news.google.com/rss/search?q=semiconductor+OR+chip+OR+TSMC+OR+NVIDIA+OR+Intel+when:3d&hl=en-US&gl=US&ceid=US:en') },
   ],

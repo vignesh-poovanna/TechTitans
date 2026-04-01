@@ -18,7 +18,7 @@ const POLITICAL_OVERRIDES: Record<string, string> = { 'CN-TW': 'TW' };
 
 const NAME_ALIASES: Record<string, string> = {
   'dr congo': 'CD', 'democratic republic of the congo': 'CD',
-  'czech republic': 'CZ', 'ivory coast': 'CI', "cote d'ivoire": 'CI',
+  'czech republic': 'CZ', 'ivory coast': 'CI', 'cote d\'ivoire': 'CI',
   'uae': 'AE', 'uk': 'GB', 'usa': 'US',
   'south korea': 'KR', 'north korea': 'KP',
   'republic of the congo': 'CG', 'east timor': 'TL',

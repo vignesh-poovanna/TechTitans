@@ -17,7 +17,7 @@ export class HeroSpotlightPanel extends Panel {
   public onLocationRequest?: (lat: number, lon: number) => void;
 
   constructor() {
-    super({ id: 'spotlight', title: "Today's Hero", trackActivity: false });
+    super({ id: 'spotlight', title: 'Today\'s Hero', trackActivity: false });
     this.content.innerHTML =
       '<div class="hero-card-loading">Loading today\'s hero...</div>';
   }

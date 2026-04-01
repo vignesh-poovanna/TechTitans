@@ -3,7 +3,7 @@ const HTML_ESCAPE_MAP: Record<string, string> = {
   '<': '&lt;',
   '>': '&gt;',
   '"': '&quot;',
-  "'": '&#39;',
+  '\'': '&#39;',
 };
 
 export function escapeHtml(str: string): string {

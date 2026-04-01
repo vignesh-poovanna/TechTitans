@@ -557,7 +557,7 @@ export async function initLiveChannelsWindow(containerEl?: HTMLElement): Promise
         addBtn.textContent = t('components.liveNews.addChannel') ?? 'Add channel';
       }
 
-      channels.push({ id, name: resolvedName, handle: `@video`, fallbackVideoId: videoId, useFallbackOnly: true });
+      channels.push({ id, name: resolvedName, handle: '@video', fallbackVideoId: videoId, useFallbackOnly: true });
       saveChannelsToStorage(channels);
       renderList(listEl);
       if (handleInput) handleInput.value = '';

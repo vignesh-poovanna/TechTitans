@@ -746,7 +746,7 @@ export class GlobeMap {
         </div>`;
       el.title = `${d.sideA} vs ${d.sideB}`;
     } else if (d._kind === 'displacement') {
-      el.innerHTML = `<div style="font-size:11px;color:#88bbff;text-shadow:0 0 4px #88bbff88;">👥</div>`;
+      el.innerHTML = '<div style="font-size:11px;color:#88bbff;text-shadow:0 0 4px #88bbff88;">👥</div>';
       el.title = `${d.origin} → ${d.asylum}`;
     } else if (d._kind === 'climate') {
       const typeColors: Record<string, string> = { warm: '#ff4400', cold: '#44aaff', wet: '#00ccff', dry: '#ff8800', mixed: '#88ff88' };
@@ -758,7 +758,7 @@ export class GlobeMap {
       el.innerHTML = `<div style="font-size:10px;color:${c};text-shadow:0 0 4px ${c}88;">📡</div>`;
       el.title = `GPS Jamming (${d.level})`;
     } else if (d._kind === 'tech') {
-      el.innerHTML = `<div style="font-size:10px;color:#44aaff;text-shadow:0 0 4px #44aaff88;">💻</div>`;
+      el.innerHTML = '<div style="font-size:10px;color:#44aaff;text-shadow:0 0 4px #44aaff88;">💻</div>';
       el.title = d.title;
     } else if (d._kind === 'conflictZone') {
       const intColor = d.intensity === 'high' ? '#ff2020' : d.intensity === 'medium' ? '#ff8800' : '#ffcc00';
@@ -793,13 +793,13 @@ export class GlobeMap {
         "></div>`;
       el.title = `${d.name}${d.country ? ' · ' + d.country : ''}`;
     } else if (d._kind === 'nuclearSite') {
-      el.innerHTML = `<div style="font-size:11px;color:#ffd700;text-shadow:0 0 4px #ffd70088;">☢</div>`;
+      el.innerHTML = '<div style="font-size:11px;color:#ffd700;text-shadow:0 0 4px #ffd70088;">☢</div>';
       el.title = `${d.name} (${d.type})`;
     } else if (d._kind === 'irradiator') {
-      el.innerHTML = `<div style="font-size:10px;color:#ff8800;text-shadow:0 0 3px #ff880088;">⚠</div>`;
+      el.innerHTML = '<div style="font-size:10px;color:#ff8800;text-shadow:0 0 3px #ff880088;">⚠</div>';
       el.title = `${d.city}, ${d.country}`;
     } else if (d._kind === 'spaceport') {
-      el.innerHTML = `<div style="font-size:11px;color:#88ddff;text-shadow:0 0 4px #88ddff88;">🚀</div>`;
+      el.innerHTML = '<div style="font-size:11px;color:#88ddff;text-shadow:0 0 4px #88ddff88;">🚀</div>';
       el.title = `${d.name} (${d.operator})`;
     } else if (d._kind === 'earthquake') {
       const mc = d.magnitude >= 6 ? '#ff2020' : d.magnitude >= 4 ? '#ff8800' : '#ffcc00';
@@ -811,13 +811,13 @@ export class GlobeMap {
       el.innerHTML = `<div style="font-size:11px;color:${ec};text-shadow:0 0 4px ${ec}88;">💰</div>`;
       el.title = `${d.name} · ${d.country}`;
     } else if (d._kind === 'datacenter') {
-      el.innerHTML = `<div style="font-size:10px;color:#88aaff;text-shadow:0 0 3px #88aaff88;">🖥</div>`;
+      el.innerHTML = '<div style="font-size:10px;color:#88aaff;text-shadow:0 0 3px #88aaff88;">🖥</div>';
       el.title = `${d.name} (${d.owner})`;
     } else if (d._kind === 'waterway') {
-      el.innerHTML = `<div style="font-size:10px;color:#44aadd;text-shadow:0 0 3px #44aadd88;">⚓</div>`;
+      el.innerHTML = '<div style="font-size:10px;color:#44aadd;text-shadow:0 0 3px #44aadd88;">⚓</div>';
       el.title = d.name;
     } else if (d._kind === 'mineral') {
-      el.innerHTML = `<div style="font-size:10px;color:#cc88ff;text-shadow:0 0 3px #cc88ff88;">💎</div>`;
+      el.innerHTML = '<div style="font-size:10px;color:#cc88ff;text-shadow:0 0 3px #cc88ff88;">💎</div>';
       el.title = `${d.mineral} — ${d.name}`;
     } else if (d._kind === 'flightDelay') {
       const sc = d.severity === 'severe' ? '#ff2020' : d.severity === 'major' ? '#ff6600' : d.severity === 'moderate' ? '#ffaa00' : '#ffee44';
@@ -933,7 +933,7 @@ export class GlobeMap {
              `<br><span style="opacity:.7;">${esc(d.type)}</span>` +
              `<br><span style="opacity:.5;font-size:10px;">${esc(d.indicator.slice(0, 40))}</span>`;
     } else if (d._kind === 'fire') {
-      html = `<span style="color:#ff6600;font-weight:bold;">🔥 Wildfire</span>` +
+      html = '<span style="color:#ff6600;font-weight:bold;">🔥 Wildfire</span>' +
              `<br><span style="opacity:.7;">${esc(d.region)}</span>` +
              `<br><span style="opacity:.5;">Brightness: ${d.brightness.toFixed(0)} K</span>`;
     } else if (d._kind === 'protest') {
@@ -947,7 +947,7 @@ export class GlobeMap {
              `<br><span style="opacity:.7;">${esc(d.sideA)} vs ${esc(d.sideB)}</span>` +
              (d.deaths ? `<br><span style="opacity:.5;">Deaths: ${d.deaths}</span>` : '');
     } else if (d._kind === 'displacement') {
-      html = `<span style="color:#88bbff;font-weight:bold;">👥 Displacement</span>` +
+      html = '<span style="color:#88bbff;font-weight:bold;">👥 Displacement</span>' +
              `<br><span style="opacity:.7;">${esc(d.origin)} → ${esc(d.asylum)}</span>` +
              `<br><span style="opacity:.5;">Refugees: ${d.refugees.toLocaleString()}</span>`;
     } else if (d._kind === 'climate') {
@@ -977,7 +977,7 @@ export class GlobeMap {
       html = `<span style="color:${nc};font-weight:bold;">☢ ${esc(d.name)}</span>` +
              `<br><span style="opacity:.7;">${esc(d.type)} · ${esc(d.status)}</span>`;
     } else if (d._kind === 'irradiator') {
-      html = `<span style="color:#ff8800;font-weight:bold;">⚠ Gamma Irradiator</span>` +
+      html = '<span style="color:#ff8800;font-weight:bold;">⚠ Gamma Irradiator</span>' +
              `<br><span style="opacity:.7;">${esc(d.city)}, ${esc(d.country)}</span>`;
     } else if (d._kind === 'spaceport') {
       const lc = d.launches === 'High' ? '#88ddff' : d.launches === 'Medium' ? '#44aaff' : '#aaaaaa';
@@ -1010,7 +1010,7 @@ export class GlobeMap {
       html = `<span style="color:${sc};font-weight:bold;">✈ ${esc(d.iata)} — ${esc(d.severity.toUpperCase())}</span>` +
              `<br><span style="opacity:.7;">${esc(d.name)}, ${esc(d.country)}</span>` +
              `<br><span style="opacity:.7;">${esc(d.delayType.replace(/_/g, ' '))}` +
-             (d.avgDelayMinutes > 0 ? ` · avg ${d.avgDelayMinutes}min` : '') + `</span>` +
+             (d.avgDelayMinutes > 0 ? ` · avg ${d.avgDelayMinutes}min` : '') + '</span>' +
              (d.reason ? `<br><span style="opacity:.5;white-space:normal;display:block;">${esc(d.reason.slice(0, 70))}</span>` : '');
     } else if (d._kind === 'cableAdvisory') {
       const sc = d.severity === 'fault' ? '#ff2020' : '#ff8800';

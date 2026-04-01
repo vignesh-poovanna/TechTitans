@@ -115,7 +115,7 @@ async function executeIntent(intent: Intent): Promise<CommandResult> {
     }
 
     return {
-        html: `<div class="cmd-empty">Unrecognized command. Try: <code>ops IST</code>, <code>flight TK1</code>, <code>price IST LHR</code>, <code>brief</code></div>`,
+        html: '<div class="cmd-empty">Unrecognized command. Try: <code>ops IST</code>, <code>flight TK1</code>, <code>price IST LHR</code>, <code>brief</code></div>',
         error: true,
     };
 }
